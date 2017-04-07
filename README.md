@@ -10,14 +10,15 @@ ROS packml <https://en.wikipedia.org/wiki/PackML> support package
 ```
 mkdir -p ~/packml_workspace/src
 cd ~/packml_workspace/src
-git clone -b kinetic-devel https://github.com/shaun-edwards/packml.git
+git clone -b kinetic-devel https://github.com/ros-industrial-consortium/packml.git
 catkin build
 ```
 
 # Run
 ```
 source ~/packml_workspace/devel/setup.bash
-rosrun packml_gui packml
+rosrun packml_gui packml_navigation
+rosrun packml_gui packml_dashboard
 ```
 ![image](https://cloud.githubusercontent.com/assets/5349043/24665316/a54b1b8e-1922-11e7-9e9f-f03d3dfc3ce2.png)
 

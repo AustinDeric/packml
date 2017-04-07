@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>546</width>
-    <height>723</height>
+    <height>633</height>
    </rect>
   </property>
   <property name="sizePolicy">
@@ -217,7 +217,7 @@
      <item>
       <widget class="QLCDNumber" name="lcdNumber_oee">
        <property name="sizePolicy">
-        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
          <horstretch>0</horstretch>
          <verstretch>0</verstretch>
         </sizepolicy>
@@ -247,7 +247,7 @@
      <item row="3" column="1">
       <widget class="QLCDNumber" name="lcdNumber_throughput">
        <property name="sizePolicy">
-        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
          <horstretch>0</horstretch>
          <verstretch>0</verstretch>
         </sizepolicy>
@@ -275,7 +275,7 @@
      <item row="1" column="1">
       <widget class="QLCDNumber" name="lcdNumber_performance">
        <property name="sizePolicy">
-        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
          <horstretch>0</horstretch>
          <verstretch>0</verstretch>
         </sizepolicy>
@@ -303,7 +303,7 @@
      <item row="2" column="1">
       <widget class="QLCDNumber" name="lcdNumber_quality">
        <property name="sizePolicy">
-        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
          <horstretch>0</horstretch>
          <verstretch>0</verstretch>
         </sizepolicy>
@@ -316,7 +316,7 @@
      <item row="0" column="1">
       <widget class="QLCDNumber" name="lcdNumber_availability">
        <property name="sizePolicy">
-        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
          <horstretch>0</horstretch>
          <verstretch>0</verstretch>
         </sizepolicy>
@@ -362,7 +362,7 @@
      <item row="0" column="2">
       <widget class="QGraphicsView" name="graphicsView_availability">
        <property name="sizePolicy">
-        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
          <horstretch>0</horstretch>
          <verstretch>0</verstretch>
         </sizepolicy>
@@ -370,13 +370,34 @@
       </widget>
      </item>
      <item row="1" column="2">
-      <widget class="QGraphicsView" name="graphicsView_performance"/>
+      <widget class="QGraphicsView" name="graphicsView_performance">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+      </widget>
      </item>
      <item row="2" column="2">
-      <widget class="QGraphicsView" name="graphicsView_quality"/>
+      <widget class="QGraphicsView" name="graphicsView_quality">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+      </widget>
      </item>
      <item row="3" column="2">
-      <widget class="QGraphicsView" name="graphicsView_throughput"/>
+      <widget class="QGraphicsView" name="graphicsView_throughput">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+      </widget>
      </item>
     </layout>
    </item>
@@ -396,7 +417,14 @@
     </widget>
    </item>
    <item>
-    <widget class="QGraphicsView" name="graphicsView_pareto"/>
+    <widget class="QGraphicsView" name="graphicsView_pareto">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+    </widget>
    </item>
   </layout>
  </widget>

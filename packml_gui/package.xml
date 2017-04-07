@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<package>
+<package format="2">
   <name>packml_gui</name>
   <version>0.0.0</version>
   <description>GUI for packml control/display</description>
@@ -9,12 +9,13 @@
 
   <buildtool_depend>catkin</buildtool_depend>
 
-  <run_depend>rospy</run_depend>
-  <run_depend>rqt_gui</run_depend>
-  <run_depend>rqt_gui_py</run_depend>
-  <run_depend>packml_msgs</run_depend>
+  <exec_depend>rospy</exec_depend>
+  <exec_depend>rqt_gui</exec_depend>
+  <exec_depend>rqt_gui_py</exec_depend>
+  <exec_depend>packml_msgs</exec_depend>
 
   <test_depend>rostest</test_depend>
+  <test_depend>rosnode</test_depend>
 
   <export>
     <rqt_gui plugin="${prefix}/plugin.xml"/>
