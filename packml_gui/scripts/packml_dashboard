@@ -1,0 +1,10 @@
+#!/usr/bin/env python
+
+import sys
+
+from packml_gui.packml_dashboard import Packml_Dashboard
+from rqt_gui.main import Main
+
+plugin = 'packml_gui.packml_dashboard.Packml_Dashboard'
+main = Main(filename=plugin)
+sys.exit(main.main(standalone=plugin, plugin_argument_provider=Packml_Dashboard.add_arguments))

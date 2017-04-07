@@ -1,0 +1,21 @@
+#!/usr/bin/env python
+
+PKG = 'packml_gui'
+
+import sys
+import unittest
+import rosnode
+
+class TestGuiNodes(unittest.TestCase):
+
+    # test packml_navigation gui launch
+    def test_packml_navigation_launch(self):
+        self.assertTrue(rosnode.rosnode_ping('packml_navigation_node'))
+
+    # test packml_navigation gui launch
+    def test_packml_dashboard_launch(self):
+        self.assertTrue(rosnode.rosnode_ping('packml_dashboard_node'))
+
+if __name__ == '__main__':
+    import rostest
+    rostest.rosrun(PKG, 'test_gui_nodes', TestGuiNodes)

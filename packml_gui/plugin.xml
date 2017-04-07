@@ -1,5 +1,5 @@
 <library path="src">
-  <class name="Packml" type="packml_gui.packml.Packml" base_class_type="rqt_gui_py::Plugin">
+  <class name="Packml_Navigation" type="packml_gui.packml_navigation.Packml_Navigation" base_class_type="rqt_gui_py::Plugin">
     <description>
       PackML GUI control/status interface
     </description>
@@ -11,7 +11,22 @@
       </group>
       <label>PackML</label>
       <icon type="theme">applications-other</icon>
-      <statustip>PackML GUI interface control/status.</statustip>
+      <statustip>PackML GUI Navigation interface.</statustip>
+    </qtgui>
+  </class>
+  <class name="Packml_Dashboard" type="packml_gui.packml_dashboard.Packml_Dashboard" base_class_type="rqt_gui_py::Plugin">
+    <description>
+      PackML GUI control/status interface
+    </description>
+    <qtgui>
+      <group>
+        <label>PackML_Dashboard</label>
+        <icon type="theme">folder</icon>
+        <statustip>Plugins related to the ROS PackML state machine.</statustip>
+      </group>
+      <label>PackML_Dashboard</label>
+      <icon type="theme">applications-other</icon>
+      <statustip>PackML Dashboard GUI interface.</statustip>
     </qtgui>
   </class>
 

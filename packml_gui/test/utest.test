@@ -1,0 +1,5 @@
+<launch>
+  <node pkg="packml_gui" type="packml_navigation" name="packml_navigation_node" />
+  <node pkg="packml_gui" type="packml_dashboard" name="packml_dashboard_node" />
+  <test pkg="packml_gui" type="utest" test-name="utest_node"  />
+</launch>

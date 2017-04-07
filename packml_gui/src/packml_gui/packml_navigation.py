@@ -31,11 +31,11 @@ from packml_msgs.msg import Status
 from packml_msgs.msg import State
 from packml_msgs.msg import Mode
 
-class Packml(Plugin):
+class Packml_Navigation(Plugin):
 
     def __init__(self, context):
-        super(Packml, self).__init__(context)
-        self.setObjectName('Packml')
+        super(Packml_Navigation, self).__init__(context)
+        self.setObjectName('Packml_Navigation')
 
         from argparse import ArgumentParser
         parser = ArgumentParser()
@@ -50,9 +50,9 @@ class Packml(Plugin):
 
         # Create QWidget
         self._widget = QWidget()
-        ui_file = os.path.join(rospkg.RosPack().get_path('packml_gui'), 'resource', 'packml.ui')
+        ui_file = os.path.join(rospkg.RosPack().get_path('packml_gui'), 'resource', 'packml_navigation.ui')
         loadUi(ui_file, self._widget)
-        self._widget.setObjectName('Packml')
+        self._widget.setObjectName('Packml_Navigation')
 
         if context.serial_number() > 1:
             self._widget.setWindowTitle(self._widget.windowTitle() + (' (%d)' % context.serial_number()))
@@ -267,7 +267,7 @@ class Packml(Plugin):
     @staticmethod
     def add_arguments(parser):
         rospy.loginfo("Add arguments callback")
-        group = parser.add_argument_group('Options for PackML plugin')
+        group = parser.add_argument_group('Options for Packml_Navigation plugin')
         group.add_argument('--arg1', action='store_true', help='arg1 help')
 
     #def trigger_configuration(self):
